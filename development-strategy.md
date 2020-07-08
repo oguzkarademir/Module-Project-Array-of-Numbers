@@ -23,16 +23,16 @@ A simple webpage where we work collaboratively on arrays. You can enter more tha
 
 ---
 
-## 1. ...
+## 2. Add-number
 
 **As a site visitor, ...**
 
-> assigned to `...`  
-> reviewers `...` , `...` ...
+> assigned to `Oguz`  
+> reviewers `Pavel` , `Olga` and `Sayed`
 
 ## Repo
 
-This user story was developed on a branch called `...`
+This user story was developed on a branch called `add-number`
 
 ### HTML
 
