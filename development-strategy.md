@@ -6,7 +6,7 @@ A simple webpage where we work collaboratively on arrays. You can enter more tha
 
 ## Wireframe
 
-![wireframe]()
+![wireframe](.\Wireframe-Testing-week1.png)
 
 ## 0. Set-Up
 
@@ -16,32 +16,34 @@ A simple webpage where we work collaboratively on arrays. You can enter more tha
 - Cloned the repository
 - Added basic css features for centering the buttons
 - Started `development-strategy.md` file 
-- Added [this wireframe]()
+- Added [this wireframe](.\Wireframe-Testing-week1.png)
 - Started README file
 - Pushed the changes
 - Turned on GitHub Pages
 
 ---
 
-## 1. ...
+## 2. Add-number
 
-**As a site visitor, ...**
+**As a site visitor, I can add a number, see the number I added and check if it is valid **
 
-> assigned to `...`  
-> reviewers `...` , `...` ...
+> assigned to `Oguz`  
+> reviewers `Pavel` , `Olga` and `Sayed`
 
 ## Repo
 
-This user story was developed on a branch called `...`
+This user story was developed on a branch called `add-number`
 
 ### HTML
 
-- 
+- Nothing has changed
 
 ### CSS
 
-- 
+- Nothing has changed
 
 ## JS
 
-- 
+- Added `prompt` method to ask the user to enter a number
+- Added `Number` method 
+- Used `push` method to add user's number to the main shared array of numbers  
