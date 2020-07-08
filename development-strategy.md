@@ -23,6 +23,29 @@ A simple webpage where we work collaboratively on arrays. You can enter more tha
 
 ---
 
+## 1. Html_css
+
+**As a site visitor, I can see a general page markup, with css styling **
+
+> assigned to `Pavel`  
+> reviewers `Oguz` , `Olga` and `Sayed`
+
+## Repo
+
+This user story was developed on a branch called `html_css`
+
+### HTML
+
+- HTML markup according to the wireframe was added.
+
+### CSS
+
+- CSS rules for the page elements were added on this step.
+
+## JS
+
+- No changes were made on this step 
+
 ## 2. Add-number
 
 **As a site visitor, I can add a number, see the number I added and check if it is valid **
