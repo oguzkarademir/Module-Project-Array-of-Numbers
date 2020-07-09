@@ -20,6 +20,15 @@ const findGreaterThan = (arrOfNumbers, lowValue) => {
   }
 
   // write the logic!
+
+  for (let items of arrOfNumbers) {
+
+    if (items > lowValue) {
+
+      numbers.push(items);
+    }
+  }
+
 };
 
 
@@ -70,19 +79,20 @@ describe('findGreaterThan: keeps all numbers that are greater than a given value
 
 
 
+
 const findGreaterThanHandler = () => {
   console.log('\n--- calling: find greater than handler');
   console.log('numbers:', typeof numbers, '\n', numbers);
 
-  const userInput = _;
+  const userInput = prompt("Please Enter some valid number");
   console.log('userInput:', typeof userInput, '\n', userInput);
-  if (_) {
+  if (userInput === '' || Number(userInput) === NaN) {
     return;
   }
 
-  const userNumber = _;
+  const userNumber = Number(userInput);
   console.log('userNumber:', typeof userNumber, '\n', userNumber);
-  if (_) {
+  if (userNumber === NaN) {
     alert(`${userInput} is not a valid number`);
     return;
   }
@@ -92,3 +102,4 @@ const findGreaterThanHandler = () => {
 
   displayArrayHandler(filteredNumbers, `numbers greater than ${userNumber}`);
 };
+
