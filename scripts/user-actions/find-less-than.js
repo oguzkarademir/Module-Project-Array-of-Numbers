@@ -21,17 +21,14 @@ const findLessThan = (arrOfNumbers, highValue) => {
 
   // write the logic!
 
-  let filteredNum = []; //it stores numbers less than the highValue
 
   for (let items of arrOfNumbers) {
 
     if (items < highValue) {
 
-      filteredNum.push(items);
+      numbers.push(items);
     }
   }
-
-  return filteredNum;
 
 };
 
