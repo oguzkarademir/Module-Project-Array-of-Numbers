@@ -5,7 +5,7 @@ console.log('--- loading: find less than');
  * filters out all values that are not less than highValue
  * returns a new array, does not modify arrOfNumbers
  * @param {number[]} arrOfNumbers - the numbers to filter
- * @param {number} lowValue - number to compare against
+ * @param {number} highValue - number to compare against
  * @returns {number[]} the filtered numbers
  */
 const findLessThan = (arrOfNumbers, highValue) => {
@@ -20,8 +20,20 @@ const findLessThan = (arrOfNumbers, highValue) => {
   }
 
   // write the logic!
-};
 
+  let filteredNum = []; //it stores numbers less than the highValue
+
+  for (let items of arrOfNumbers) {
+
+    if (items < highValue) {
+
+      filteredNum.push(items);
+    }
+  }
+
+  return filteredNum;
+
+};
 
 
 describe('findLessThan: keeps all numbers that are less than a given value', () => {
@@ -69,26 +81,35 @@ describe('findLessThan: keeps all numbers that are less than a given value', () 
 });
 
 
-
 const findLessThanHandler = () => {
+  
   console.log('\n--- calling: find less than handler');
   console.log('numbers:', typeof numbers, '\n', numbers);
 
-  const userInput = _;
+  const userInput = prompt("Please Enter some valid number");
   console.log('userInput:', typeof userInput, '\n', userInput);
-  if (_) {
+  if (userInput === "") {
     return;
   }
 
-  const userNumber = _;
+  const userNumber = Number(userInput);
   console.log('userNumber:', typeof userNumber, '\n', userNumber);
-  if (_) {
+  if (userNumber === NaN) {
     alert(`${userInput} is not a valid number`);
     return;
   }
 
-  const filteredNumbers = _;
+  const filteredNumbers = findLessThan(numbers, userNumber); 
+
+  /*
+  * I think:
+  * because the variable 'numbers' is an empty array, we get 'undefined' the result
+  *
+  */
+
   console.log('filteredNumbers:', typeof filteredNumbers, '\n', filteredNumbers);
 
   displayArrayHandler(filteredNumbers, `numbers less than ${userNumber}`);
 };
+
+
