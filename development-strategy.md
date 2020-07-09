@@ -74,9 +74,10 @@ This user story was developed on a branch called `add-number`
 ## 3. Find-Less-Than
 
 > Assigned to `Sayed Kazimi`
+
 > reviewers `Pavel` , `Olga` and `Oguz`
 
-**As a site visitor, I want to give a number and see all the numbers less than my input number **
+**As a site visitor, I want to give a number and see all the numbers less than my input number**
  
 
 ## Branch
