@@ -70,3 +70,32 @@ This user story was developed on a branch called `add-number`
 - Added `prompt` method to ask the user to enter a number
 - Added `Number` method 
 - Used `push` method to add user's number to the main shared array of numbers  
+
+## 3. Find-Less-Than
+
+> Assigned to `Sayed Kazimi`
+> reviewers `Pavel` , `Olga` and `Oguz`
+
+**As a site visitor, I want to give a number and see all the numbers less than my input number **
+ 
+
+## Branch
+
+Developed in a branch called `find-less-than`
+
+
+### HTML
+
+- Nothing has changed
+
+### CSS
+
+- Nothing has changed
+
+## JS
+
+- Added `prompt` method for the user input
+- Added `Number` method to convert the user input from string data type to number data type
+- Wrote the logic for the program
+- Filled the blanks for type checking and making sure that users enter a valid number
+- Used `push` method to add all lower numbers to the main shared array of numbers  
