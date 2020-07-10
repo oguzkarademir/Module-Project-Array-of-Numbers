@@ -9,64 +9,64 @@ console.log('--- loading: display array');
  * @returns {string} a string of numbers on newlines
  */
 const reduceForAlert = (arrOfNumbers) => {
-  if (!Array.isArray(arrOfNumbers)) {
-    throw new TypeError('parameter must be an array');
-  }
-  if (!arrOfNumbers.every(entry => typeof entry === 'number')) {
-    throw new TypeError('parameter must contain only numbers')
-  }
+    if (!Array.isArray(arrOfNumbers)) {
+        throw new TypeError('parameter must be an array');
+    }
+    if (!arrOfNumbers.every(entry => typeof entry === 'number')) {
+        throw new TypeError('parameter must contain only numbers')
+    }
 
-  // write the logic!
+    // write the logic!
+    return arrOfNumbers.reduce((res, value) => res += `${value}\n`, '');
 };
 
 
-
 describe('reduceForAlert: reduces an array of numbers into an alert-friendly string', () => {
-  describe('correctly reduces the array', () => {
-    it('returns an empty string for an empty array', () => {
-      const expected = '';
-      const actual = reduceForAlert([]);
-      assert.strictEqual(actual, expected);
+    describe('correctly reduces the array', () => {
+        it('returns an empty string for an empty array', () => {
+            const expected = '';
+            const actual = reduceForAlert([]);
+            assert.strictEqual(actual, expected);
+        });
+        it('adds a newline after each number', () => {
+            const expected = '300\n';
+            const actual = reduceForAlert([300]);
+            assert.strictEqual(actual, expected);
+        });
+        it('reduces many numbers', () => {
+            const expected = '300\n0\n123\n24.5\n7\n30.9\n';
+            const actual = reduceForAlert([300, 0, 123, 24.5, 7, 30.9]);
+            assert.strictEqual(actual, expected);
+        });
     });
-    it('adds a newline after each number', () => {
-      const expected = '300\n';
-      const actual = reduceForAlert([300]);
-      assert.strictEqual(actual, expected);
+    describe('uses the argument correctly', () => {
+        it('does not modify the argument array', () => {
+            const arg = [1, 2, 3, 4];
+            reduceForAlert(arg);
+            assert.deepStrictEqual(arg, [1, 2, 3, 4]);
+        });
+        it('throws an error if the argument is not an array', () => {
+            const shouldThrow = () => reduceForAlert('hello!');
+            assert.throws(shouldThrow, TypeError, 'parameter must be an array');
+        });
+        it('throws an error if the argument contains non-numbers', () => {
+            const shouldThrow = () => reduceForAlert([1, 2, '3', 4, ]);
+            assert.throws(shouldThrow, TypeError, 'parameter must contain only numbers');
+        });
     });
-    it('reduces many numbers', () => {
-      const expected = '300\n0\n123\n24.5\n7\n30.9\n';
-      const actual = reduceForAlert([300, 0, 123, 24.5, 7, 30.9]);
-      assert.strictEqual(actual, expected);
-    });
-  });
-  describe('uses the argument correctly', () => {
-    it('does not modify the argument array', () => {
-      const arg = [1, 2, 3, 4];
-      reduceForAlert(arg);
-      assert.deepStrictEqual(arg, [1, 2, 3, 4]);
-    });
-    it('throws an error if the argument is not an array', () => {
-      const shouldThrow = () => reduceForAlert('hello!');
-      assert.throws(shouldThrow, TypeError, 'parameter must be an array');
-    });
-    it('throws an error if the argument contains non-numbers', () => {
-      const shouldThrow = () => reduceForAlert([1, 2, '3', 4,]);
-      assert.throws(shouldThrow, TypeError, 'parameter must contain only numbers');
-    });
-  });
 });
 
 
 // this handler works, no ned to change it.  Just to study it!
 const displayArrayHandler = (arrayToDisplay = numbers, message = 'all saved numbers') => {
-  console.log('\n--- calling: display array handler');
-  console.log('arrayToDisplay:', typeof arrayToDisplay, '\n', arrayToDisplay);
-  console.log('message:', typeof message, '\n', message);
+    console.log('\n--- calling: display array handler');
+    console.log('arrayToDisplay:', typeof arrayToDisplay, '\n', arrayToDisplay);
+    console.log('message:', typeof message, '\n', message);
 
-  const stringToDisplay = reduceForAlert(arrayToDisplay);
-  console.log('stringToDisplay:', typeof stringToDisplay, '\n', stringToDisplay);
+    const stringToDisplay = reduceForAlert(arrayToDisplay);
+    console.log('stringToDisplay:', typeof stringToDisplay, '\n', stringToDisplay);
 
-  alert(`${message}:\n${stringToDisplay}`);
+    alert(`${message}:\n${stringToDisplay}`);
 };
 
 

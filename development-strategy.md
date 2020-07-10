@@ -71,7 +71,30 @@ This user story was developed on a branch called `add-number`
 - Added `Number` method 
 - Used `push` method to add user's number to the main shared array of numbers  
 
-## 3. Remove-number
+## 3. Display-array
+
+**As a site visitor, I can see every number in array displayed on separate line **
+
+> assigned to `Pavel`  
+> reviewers `Pavel`
+
+## Repo
+
+This user story was developed on a branch called `display-array`
+
+### HTML
+
+- Nothing has changed
+
+### CSS
+
+- Nothing has changed
+
+## JS
+
+- Added logic to the displayArrayHandler function method to display every number in array on the separate line
+
+## 7. Remove-number
 
 **As a site visitor, I can remove a number, see the number I want to remove and get a confirmation if it is removed **
 
