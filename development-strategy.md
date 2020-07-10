@@ -25,7 +25,7 @@ A simple webpage where we work collaboratively on arrays. You can enter more tha
 
 ## 1. Html_css
 
-**As a site visitor, I can see a general page markup, with css styling **
+**As a site visitor, I can see a general page markup, with css styling**
 
 > assigned to `Pavel`  
 > reviewers `Oguz` , `Olga` and `Sayed`
@@ -48,7 +48,7 @@ This user story was developed on a branch called `html_css`
 
 ## 2. Add-number
 
-**As a site visitor, I can add a number, see the number I added and check if it is valid **
+**As a site visitor, I can add a number, see the number I added and check if it is valid**
 
 > assigned to `Oguz`  
 > reviewers `Pavel` , `Olga` and `Sayed`
@@ -73,7 +73,7 @@ This user story was developed on a branch called `add-number`
 
 ## 3. Display-array
 
-**As a site visitor, I can see every number in array displayed on separate line **
+**As a site visitor, I can see every number in array displayed on separate line**
 
 > assigned to `Pavel`  
 > reviewers `Pavel`
@@ -96,7 +96,7 @@ This user story was developed on a branch called `display-array`
 
 ## 4. Find-average
 
-**As a site visitor, I can to calculate the average of all numbers which I entered **
+**As a site visitor, I can to calculate the average of all numbers which I entered**
 
 > assigned to `Olga`  
 > reviewers `Oguz` , `Pavel`, `Yauhenia` and `Sayed`
@@ -121,7 +121,7 @@ This user story was developed on a branch called `find-average`
 
 ## 7. Remove-number
 
-**As a site visitor, I can remove a number, see the number I want to remove and get a confirmation if it is removed **
+**As a site visitor, I can remove a number, see the number I want to remove and get a confirmation if it is removed**
 
 > assigned to `Yauheniya`  
 > reviewers `Oguz` and `Sayed`
