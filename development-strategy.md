@@ -70,3 +70,26 @@ This user story was developed on a branch called `add-number`
 - Added `prompt` method to ask the user to enter a number
 - Added `Number` method 
 - Used `push` method to add user's number to the main shared array of numbers  
+
+## 3. Display-array
+
+**As a site visitor, I can see every number in array displayed on separate line **
+
+> assigned to `Pavel`  
+> reviewers `Pavel`
+
+## Repo
+
+This user story was developed on a branch called `display-array`
+
+### HTML
+
+- Nothing has changed
+
+### CSS
+
+- Nothing has changed
+
+## JS
+
+- Added logic to the displayArrayHandler function method to display every number in array on the separate line
