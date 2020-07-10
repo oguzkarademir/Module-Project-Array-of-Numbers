@@ -93,3 +93,20 @@ This user story was developed on a branch called `display-array`
 ## JS
 
 - Added logic to the displayArrayHandler function method to display every number in array on the separate line
+
+## 7. Remove-number
+
+**As a site visitor, I can remove a number, see the number I want to remove and get a confirmation if it is removed **
+
+> assigned to `Yauheniya`  
+> reviewers `Oguz` and `Sayed`
+
+## Repo
+
+This user story was developed on a branch called `remove-number`
+
+## JS
+
+- Added `prompt` method to ask what is wanted to be removed
+- Added an explicit coercion of `Number` to user's input
+- Used `remove` method to remove user's number. 

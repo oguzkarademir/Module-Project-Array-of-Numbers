@@ -21,6 +21,7 @@ const removeNumber = (arrOfNumbers, toRemove) => {
   }
 
   // write the logic!
+  return arrOfNumbers.filter(function(entry){ return entry !== toRemove; })
 };
 
 
@@ -76,20 +77,20 @@ const removeNumberHandler = () => {
   console.log('\n--- calling: remove number handler');
   console.log('numbers (before):', typeof numbers, '\n', numbers);
 
-  const userInput = _;
+  const userInput = prompt('what you wish to remove');
   console.log('userInput:', typeof userInput, '\n', userInput);
-  if (_) {
+  if (userInput === null || userInput === '') {
     return;
   }
 
-  const userNumber = _;
+  const userNumber = Number(userInput);
   console.log('userNumber:', typeof userNumber, '\n', userNumber);
-  if (_) {
+  if (Number(isNaN(userNumber))) {
     alert(`${userInput} is not a valid number`);
     return;
   }
 
-  numbers = _;
+  numbers = removeNumber(numbers, userNumber);
   console.log('numbers (after):', typeof numbers, '\n', numbers);
 
   displayArrayHandler(numbers, `successfully removed ${userNumber}`);
