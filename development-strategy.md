@@ -16,7 +16,7 @@ A simple webpage where we work collaboratively on arrays. You can enter more tha
 - Cloned the repository
 - Added basic css features for centering the buttons
 - Started `development-strategy.md` file 
-- Added [this wireframe](.\Wireframe-Testing-week1.png)
+- Added [this wireframe](./Wireframe-Testing-week1.png)
 - Started README file
 - Pushed the changes
 - Turned on GitHub Pages
