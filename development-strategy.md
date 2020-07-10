@@ -94,6 +94,31 @@ This user story was developed on a branch called `display-array`
 
 - Added logic to the displayArrayHandler function method to display every number in array on the separate line
 
+## 4. Find-average
+
+**As a site visitor, I can to calculate the average of all numbers which I entered **
+
+> assigned to `Olga`  
+> reviewers `Oguz` , `Pavel`, `Yauhenia` and `Sayed`
+
+## Repo
+
+This user story was developed on a branch called `find-average`
+
+### HTML
+
+- Nothing has changed
+
+### CSS
+
+- Nothing has changed
+
+## JS
+
+- Added `for-loop` to find the sum of entered numbers
+- Added `if` operator to return `0` if array is empty
+- Used `\` operator to calculate average  
+
 ## 7. Remove-number
 
 **As a site visitor, I can remove a number, see the number I want to remove and get a confirmation if it is removed **
