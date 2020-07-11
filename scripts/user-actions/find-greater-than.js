@@ -21,14 +21,17 @@ const findGreaterThan = (arrOfNumbers, lowValue) => {
 
   // write the logic!
 
+  let filteredNum = []; // stores all numbers greater than the user's input
+
   for (let items of arrOfNumbers) {
 
     if (items > lowValue) {
 
-      numbers.push(items);
+      filteredNum.push(items);
     }
   }
 
+  return filteredNum;
 };
 
 
