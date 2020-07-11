@@ -16,6 +16,18 @@ const reduceToAverage = (arrOfNumbers) => {
   }
 
   // write the logic
+  if (arrOfNumbers.length === 0) {
+    return 0;
+  }
+
+  let total = 0;
+    for (let i of arrOfNumbers) {
+      total += i;
+    }
+
+    let calcAverage = total / arrOfNumbers.length;
+    return calcAverage;
+
 };
 
 
