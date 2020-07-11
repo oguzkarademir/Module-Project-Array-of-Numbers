@@ -21,8 +21,6 @@ A simple webpage where we work collaboratively on arrays. You can enter more tha
 - Pushed the changes
 - Turned on GitHub Pages
 
----
-
 ## 1. Html_css
 
 **As a site visitor, I can see a general page markup, with css styling**
@@ -115,9 +113,34 @@ This user story was developed on a branch called `find-average`
 
 ## JS
 
-- Added `for-loop` to find the sum of entered numbers
-- Added `if` operator to return `0` if array is empty
-- Used `\` operator to calculate average  
+## 6. Find-Less-Than
+
+> Assigned to `Sayed Kazimi`
+
+> reviewers `Pavel` , `Olga` and `Oguz`
+
+**As a site visitor, I want to give a number and see all the numbers less than my input number**
+ 
+## Branch
+
+Developed in a branch called `find-less-than`
+
+
+### HTML
+
+- Nothing has changed
+
+### CSS
+
+- Nothing has changed
+
+## JS
+
+- Added `prompt` method for the user input
+- Added `Number` method to convert the user input from string data type to number data type
+- Wrote the logic for the program
+- Filled the blanks for type checking and making sure that users enter a valid number
+- Used `push` method to add all lower numbers to the main shared array of numbers  
 
 ## 7. Remove-number
 
@@ -135,3 +158,4 @@ This user story was developed on a branch called `remove-number`
 - Added `prompt` method to ask what is wanted to be removed
 - Added an explicit coercion of `Number` to user's input
 - Used `remove` method to remove user's number. 
+
