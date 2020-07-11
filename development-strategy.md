@@ -69,29 +69,6 @@ This user story was developed on a branch called `add-number`
 - Added `Number` method 
 - Used `push` method to add user's number to the main shared array of numbers  
 
-## 3. Display-array
-
-**As a site visitor, I can see every number in array displayed on separate line**
-
-> assigned to `Pavel`  
-> reviewers `Pavel`
-
-## Repo
-
-This user story was developed on a branch called `display-array`
-
-### HTML
-
-- Nothing has changed
-
-### CSS
-
-- Nothing has changed
-
-## JS
-
-- Added logic to the displayArrayHandler function method to display every number in array on the separate line
-
 ## 4. Find-average
 
 **As a site visitor, I can to calculate the average of all numbers which I entered**
@@ -111,20 +88,47 @@ This user story was developed on a branch called `find-average`
 
 - Nothing has changed
 
-## JS
+### JS
 
-## 6. Find-Less-Than
+## 5. Find-Greater-Than
+
+**As a site visitor, I want to give a number and see all the numbers greater than my input number**
 
 > Assigned to `Sayed Kazimi`
 
 > reviewers `Pavel` , `Olga` and `Oguz`
 
+## Branch
+
+Developed in a branch called `find-greater-than`
+
+### HTML
+
+- Nothing has changed
+
+### CSS
+
+- Nothing has changed
+
+## JS
+
+- Added `prompt` method for the user input
+- Added `Number` method to convert the user input from string data type to number data type
+- Wrote the logic for the program
+- Filled the blanks for type checking and making sure that users enter a valid number
+- Used `push` method to add all lower numbers to the main shared array of numbers 
+
+## 6. Find-Less-Than
+
 **As a site visitor, I want to give a number and see all the numbers less than my input number**
+
+> Assigned to `Sayed Kazimi`
+
+> reviewers `Pavel` , `Olga` and `Oguz`
  
 ## Branch
 
 Developed in a branch called `find-less-than`
-
 
 ### HTML
 
@@ -158,4 +162,3 @@ This user story was developed on a branch called `remove-number`
 - Added `prompt` method to ask what is wanted to be removed
 - Added an explicit coercion of `Number` to user's input
 - Used `remove` method to remove user's number. 
-
